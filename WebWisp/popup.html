@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+  <style>
+      body {
+        width: 900px;
+        color: #000;
+        font: 15px sans-serif;
+      }
+      #output {
+        color: #d00;
+        text-align: center;
+      }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+    </style>
+<style type="text/css">
+.myButton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+  box-shadow:inset 0px 1px 0px 0px #97c4fe;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+  background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+  background-color:#3d94f6;
+  -webkit-border-top-left-radius:20px;
+  -moz-border-radius-topleft:20px;
+  border-top-left-radius:20px;
+  -webkit-border-top-right-radius:20px;
+  -moz-border-radius-topright:20px;
+  border-top-right-radius:20px;
+  -webkit-border-bottom-right-radius:20px;
+  -moz-border-radius-bottomright:20px;
+  border-bottom-right-radius:20px;
+  -webkit-border-bottom-left-radius:20px;
+  -moz-border-radius-bottomleft:20px;
+  border-bottom-left-radius:20px;
+  text-indent:0;
+  border:1px solid #337fed;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:18px;
+  font-weight:bold;
+  font-style:normal;
+  height:40px;
+  line-height:40px;
+  width:100px;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:1px 1px 0px #1570cd;
+}
+.myButton:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
+  background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+  background-color:#1e62d0;
+}.myButton:active {
+  position:relative;
+  top:1px;
+}</style>
+
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <!--script src="popup.js"></script-->
+  </head>
+  <body>
+    <script src="d3.v3.js"></script>
+    <div id="pic1" font-size="11px"><script src="popup.js"></script></div>
+    <div id="pic2"><script src="popupCompare.js"></script></div>
+    <!--img src="picSelf.png" alt="Smiley face" height="288" width="517">
+    <img src="picCompare.png" alt="Smiley face" height="288" width="247"-->
+    <h1 id="beat" style="font-family:verdana;text-indent:50px" > </h1>
+    
+
+
+
+    
+<form action="abc.html" method="get">
+
+  <button id='button1' class='myButton' style="margin-left:50px;margin-right:50px">Clear</button>
+
+    <button type='submit' id='button2' class='myButton' style="margin-left:0px;margin-right:50px">Compare</button>
+    <button id='button3' class='myButton' style="margin-left:250px;margin-right:50px">Submit</button>
+</form>
+
+  </body>
+</html>
+
